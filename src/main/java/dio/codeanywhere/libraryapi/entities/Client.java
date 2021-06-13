@@ -40,5 +40,5 @@ public class Client {
         CascadeType.MERGE,
         CascadeType.REMOVE})
 
-    private List<Book> books = new ArrayList<>();
+    private List<Book> book = new ArrayList<>();
 }
