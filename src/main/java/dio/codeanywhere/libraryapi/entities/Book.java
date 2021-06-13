@@ -28,7 +28,7 @@ public class Book {
     @Column(nullable = false)
     private BookGenres genre;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String author;
 
     private LocalDate date;

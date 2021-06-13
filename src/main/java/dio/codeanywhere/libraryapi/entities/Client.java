@@ -41,4 +41,5 @@ public class Client {
         CascadeType.REMOVE})
 
     private List<Book> book = new ArrayList<>();
+
 }
