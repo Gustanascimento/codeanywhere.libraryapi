@@ -16,6 +16,8 @@
 	<description>REST API project developed during Code Anywhere bootcamp from Avanade in partnership with Porto Digital</description>
 	<properties>
 		<java.version>11</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
 	
