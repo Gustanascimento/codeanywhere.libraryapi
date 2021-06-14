@@ -111,9 +111,11 @@ Finally, here is an Example of a valid POST request body (JSON) to create a new 
 
 *Here, the client borrowed a total of two books*
 
-To make those requests without a WEB interface already developed, you can use a software to simulate requests, like [Insomnia](https://insomnia.rest/download) or [Postman](https://www.postman.com/downloads/)!
 
 
+To make those requests without a WEB interface already developed, you can use a software to make the requests, like [Insomnia](https://insomnia.rest/download) or [Postman](https://www.postman.com/downloads/)!
+
+![Insomnia](https://raw.githubusercontent.com/Gustanascimento/codeanywhere.libraryapi/master/images/insomnia.jpg)
 
 
 
