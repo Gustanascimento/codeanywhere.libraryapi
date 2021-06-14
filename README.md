@@ -1,5 +1,8 @@
 # 📚 REST API library client management system with Spring Boot 🍃
+
 ##### REST API developed during [Avanade's Code Anywhere bootcamp](https://web.digitalinnovation.one/) in partheship with [Porto Digital](https://www.portodigital.org/home) of Recife, Pernambuco - Brazil, and cloud deployed through Heroku
+
+Gustavo Prazeres Paz do Nascimento, June 2021 - Recife, PE - Brazil
 
 [Deployment](https://dioapi-live.herokuapp.com/) ![Deployment](https://img.shields.io/github/deployments/Gustanascimento/codeanywhere.libraryapi/dioapi-live)
 
@@ -10,8 +13,6 @@
 * Initial project setup with [Spring Boot Initialzr](https://start.spring.io/) 
 
 * Database and entity modelling
-
-  ``
 
 * Developing CRUD operations to manage users using the REST architectural pattern (GET, POST, PUT and DELETE)
 
@@ -37,39 +38,107 @@
 
 
 
-#### 💻Modelagem do Banco de Dados H2
+#### 💻 H2 Database Modeling
 
-![](library_database_scheme.svg)
-
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-06-13T23:37:05.904Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36\&quot; etag=\&quot;eRwTplg3PVeb0xNNLmRU\&quot; version=\&quot;14.7.7\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;R2lEEEUBdFMjLlhIrx00\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
-<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+![](https://raw.githubusercontent.com/Gustanascimento/codeanywhere.libraryapi/master/images/library_database_scheme.jpg)
 
 
 
-### 📲 Quick start guide and making requests
+### 📲 Quick start guide
 
-To run the project on the terminal, type the following command:
-
-
-
-a
+To run the project on the terminal, cd to the root folder and type the following command:
 
  `mvn spring-boot:run ` 
 
+![Terminal](https://github.com/Gustanascimento/codeanywhere.libraryapi/blob/master/images/springBoot.jpg?raw=true)
+
+**By default, the server will start on http://localhost:9090/ **because i already have a service running on port 8080 on my computer. If you want it to start on default port 8080, you can go to the `aplication.properties` file and delete the line "server.port=9090", but it should work either port.
 
 
-By default, the server will start on port 9090. If you want it to start on default port 8080, you should go to aplication.properties and delete the line referring to "server port"
+
+### 🌎 Making requests
+
+After starting the project, the server will be listening on the root of  http://localhost:9090/
+
+You can refer to the table of valid requests below:
+
+| Method | Parameters | Action                                                    |
+| ------ | ---------- | --------------------------------------------------------- |
+| POST   | /          | Creates a customer with an automatic id                   |
+| GET    | /          | Returns a JSON list of all customers registered           |
+| GET    | /{id}      | Return an specific customer with an id passed as argument |
+| PUT    | /{id}      | Updates the customer of the passed id                     |
+| DELETE | /{id}      | Deletes the customer of the passed id                     |
+
+To create a book, those are the valid genres registered in the Library system:
+
+```
+CLASSIC("Classic"),
+COMEDY("Comedy"),
+MYSTERY("Mystery"),
+FANTASY("Fantasy"),
+SCI_FI("Science Fiction"),
+HORROR("Horror"),
+ROMANCE("Romance"),
+ACADEMIC("Academic");
+```
+
+Finally, here is an Example of a valid POST request body (JSON) to create a new customer:
+
+```json
+{
+	"name": "Customer's Name",
+	"cpf": "Customer's CPF (brazilian taxpayer registry ID)",
+	"age": "22",
+	"address": "18643 52 Ave #101, Surrey, BC V3S 8E5, Canada",
+	"phone": "(555)555-1234",
+	"book": [
+		{
+			"title": "Harry Potter and the Philosopher's Stone",
+			"genre": "FANTASY",
+			"author": "J. K. Rowling",
+			"date":"2012-04-23T18:25:43.511Z"
+		},
+		{
+			"title": "Dom Casmurro",
+			"genre": "CLASSIC",
+			"author": "Machado de Assis",
+			"date":"1899-04-23T18:25:43.511Z"
+		}
+	]
+}
+```
+
+*Here, the client borrowed a total of two books*
+
+To make those requests without a WEB interface already developed, you can use a software to simulate requests, like [Insomnia](https://insomnia.rest/download) or [Postman](https://www.postman.com/downloads/)!
 
 
 
 
+
+#### ❗ Known Problems (Working on a fix)
+
+- When using the update (PUT) method to update information of the book property, all the past and new books need to be completely typed again (even if you only want to update one of the books or information), otherwise it wont update:
+
+  ```json
+  "book": [
+  		{
+  			"title": "insert here the book title",
+  			"genre": "COMEDY",
+  			"author": "Myself",
+  		}
+      ]
+  ```
+
+- If you add more than one book, the server gives a slap on your face and refuses to answer
+
+- When the user creates a client with a missing required field, the server responds with the "500 - Internal server error" code. The client isn't actually created, just the response that isn't right for the moment 
 
 
 
 ```English
-MIT License
-
-Copyright (c) 2021 Gustavo Nascimento
+Copyright (c) 2021 Gustavo Prazeres Paz do Nascimento
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
