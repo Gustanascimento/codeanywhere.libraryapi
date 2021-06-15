@@ -16,8 +16,6 @@ Gustavo Prazeres Paz do Nascimento, June 2021 - Recife, PE - Brazil
 
 * Developing CRUD operations to manage users using the REST architectural pattern (GET, POST, PUT and DELETE)
 
-* Development of unit tests for functionality validation
-
 * Cloud system deployment through Heroku
 
   
@@ -52,13 +50,15 @@ To run the project on the terminal, cd to the root folder and type the following
 
 ![Terminal](https://github.com/Gustanascimento/codeanywhere.libraryapi/blob/master/images/springBoot.jpg?raw=true)
 
-**By default, the server will start on http://localhost:9090/ **because i already have a service running on port 8080 on my computer. If you want it to start on default port 8080, you can go to the `aplication.properties` file and delete the line "server.port=9090", but it should work either port.
+**By default, the server will start on http://localhost:8080/**
 
 
 
 ### 🌎 Making requests
 
-After starting the project, the server will be listening on the root of  http://localhost:9090/
+After starting the project, the server will be listening on the root of  http://localhost:8080/. If you dont want to execute the project by yourself on your localhost, you can check the online deployment version on heroku: https://dioapi-live.herokuapp.com/
+
+
 
 You can refer to the table of valid requests below:
 
@@ -121,7 +121,7 @@ To make those requests without a WEB interface already developed, you can use a 
 
 #### ❗ Known Problems (Working on a fix)
 
-- When using the update (PUT) method to update information of the book property, all the past and new books need to be completely typed again (even if you only want to update one of the books or information), otherwise it wont update:
+- When using the update (PUT) method to update information of the book property, the book book needs to be completely typed again (even if you only want to update one of the books or information), otherwise it wont update:
 
   ```json
   "book": [
@@ -132,8 +132,6 @@ To make those requests without a WEB interface already developed, you can use a 
   		}
       ]
   ```
-
-- If you add more than one book, the server gives a slap on your face and refuses to answer
 
 - When the user creates a client with a missing required field, the server responds with the "500 - Internal server error" code. The client isn't actually created, just the response that isn't right for the moment 
 
