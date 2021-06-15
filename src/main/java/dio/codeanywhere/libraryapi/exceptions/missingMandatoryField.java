@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class missingMandatoryField extends Exception {
 
     public missingMandatoryField(String field) {
-        super("The Following field is mandatory: '"+ field +"'!");
+        super(String.format("The Following field is mandatory: %s !!", field));
     }
 }
