@@ -111,6 +111,23 @@ Finally, here is an Example of a valid POST request body (JSON) to create a new 
 
 *Here, the client borrowed a total of two books*
 
+Following the example above, let's say the customer returned the borrowed books and got another one. We can use the PUT request below to update the customer's 'book' property:
+
+```
+{
+	"book": [
+		{
+			"title": "The Little Prince",
+			"genre": "CLASSIC",
+			"author": "Antoine de Saint-Exupéry",
+			"date":"1943-04-23T18:25:43.511Z"
+		}
+	]
+}
+```
+
+*The same (Update) can be done for the other properties (Except CPF, because it never changes)*
+
 
 
 To make those requests without a WEB interface already developed, you can use a software to make the requests, like [Insomnia](https://insomnia.rest/download) or [Postman](https://www.postman.com/downloads/)!
@@ -121,19 +138,8 @@ To make those requests without a WEB interface already developed, you can use a 
 
 #### ❗ Known Problems (Working on a fix)
 
-- When using the update (PUT) method to update information of the book property, the book book needs to be completely typed again (even if you only want to update one of the books or information), otherwise it wont update:
+- When the user creates a client with a missing required field, or updates a book with a missing field, the server responds with the "500 - Internal server error" code. The client isn't actually created, nor the book is updated, just the response that isn't right for the moment 
 
-  ```json
-  "book": [
-  		{
-  			"title": "insert here the book title",
-  			"genre": "COMEDY",
-  			"author": "Myself",
-  		}
-      ]
-  ```
-
-- When the user creates a client with a missing required field, the server responds with the "500 - Internal server error" code. The client isn't actually created, just the response that isn't right for the moment 
 
 
 
